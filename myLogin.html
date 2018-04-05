@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="myLogin style.css" />
+  <title>Login</title>
+</head>
+
+<body>
+  <!--On submit, send the form-data to a file named "/action_page.php" (to process the input):-->
+  <!-- syntax <form action="URL">-->
+  <form action="action_page.php">
+
+    <div class="topbox">
+      <p><b>Sign In</b></p>
+    </div>
+
+    <div class="u_name">
+      <label for="user_name">Username:</label>
+      <input type="text" placeholder="Enter Username" name="u_name" required>
+    </div>
+
+    <div class="pw">
+      <label for="psw">Password:</label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+    </div>
+
+    <div class="bottombox">
+      <button type="submit">Login</button>
+    </div>
+
+  </form>
+</body>
+
+</html>
