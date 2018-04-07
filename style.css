@@ -1,0 +1,129 @@
+{
+  margin: 0;
+  padding: 0;
+}
+
+@supports (display: flex) {
+  body {
+    display: flex;
+    height: 80vh;
+    /*This centers the box vertically*/
+    align-items: center;
+    justify-content: center;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+
+  label{
+    font-size: 20px
+  }
+  .topbox {
+    background-color: rgba(191, 216, 227, 0.8);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 24px;
+    grid-column-end: span 2;
+    padding: 5px;
+  }
+  .u_name {
+    background-color: rgba(191, 216, 227, 0.4);
+    align-content: center;
+  }
+  .pw {
+    display: grid;
+    background-color: rgba(191, 216, 227, 0.4);
+  }
+  .bottombox {
+    background-color: rgba(191, 216, 227, 0.4);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    grid-column-end: span 2;
+    text-align: center;
+  }
+  button {
+    border-radius: 5px;
+    width: 15%;
+    padding: 3px;
+    font-size: 15px;
+  }
+  input[type="text"], input[type="password"] {
+    border: 1px solid rgba(191, 216, 227, .4);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 110%;
+    width: 90%; /*Inputbox Size*/
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 90%;
+    position: absolute;
+    top: 0;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+.active {
+    background-color: #4CAF50;
+  }
+ul .search-container {
+  float: right;
+}
+
+ul input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+ul .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+ul .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  ul .search-container {
+    float: none;
+  }
+  ul a, ul input[type=text], ul .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  ul input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
