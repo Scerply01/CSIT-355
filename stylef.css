@@ -1,0 +1,304 @@
+{
+  margin: 0;
+  padding: 0;
+}
+
+/*w3schools*/
+@supports (display: flex) {
+  body {
+    display: flex;
+    height: 80vh;
+    /*This centers the box vertically*/
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 90%;
+    position: absolute;
+    top: 0;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  li a:hover:not(.active) {
+    /*background-color: #111;*/
+  }
+
+.active {
+    background-color: #4CAF50;
+  }
+
+/*Abdul's*/
+table {
+    margin: 0 auto;
+    position: static;
+}
+.table, th, td {
+  border: none;
+  border-spacing: 0px;
+}
+#my_table{
+  margin-top:125px;
+  margin-left:20px;
+  position: absolute; top: 25px; /*left: 70px; */
+
+}
+
+.stretch {
+  width:100%;
+}
+
+.container {
+  width: 50%;
+  height: auto;
+}
+/*Dan's*/
+.carthead{
+  position: absolute;
+  top: 100px;
+  left: 168px;
+}
+
+.shrink1{
+  font-size: 10px;
+}
+.shrink2{
+  font-size: 14px;
+}
+
+.result-box-title{
+  position: absolute;
+  top: 100px;
+  left: 168px;
+  width: 1200px;
+}
+
+.result-order-title{
+  position: absolute;
+  top: 100px;
+  left: 168px;
+  width: 1200px;
+  text-align: justify;
+}
+
+.msg{
+  position: absolute;
+  top: 200;
+}
+
+/*Search Bar*/
+.searchBar {
+  position: absolute;
+  right: 250;
+  top: 10;
+}
+
+input[type=text]{ /*Fix size!!!!!!!!!!!!!!*/
+  width:250px;
+  height: 35px;
+  border-radius: 4px;
+}
+
+.searchBar button{
+  border-radius: 4px;
+  height: 37px;
+  width: 30px;
+}
+
+/*drop down w3schools*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+ }
+
+ .dropdown .dropbtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font:inherit;
+    font-size: 25px;
+ }
+
+ .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #111;
+ }
+
+ .dropdown:hover .dropdown-content {
+    display: block;
+ }
+
+ .dropdown-content {
+    display: none;
+    position:fixed;
+    background-color: #f9f9f9;
+    min-width: 208px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+ }
+
+ .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+ }
+
+ .dropdown-content a:hover {
+    background-color: #ddd;
+ }
+
+ .showA {
+    display: block;
+ }
+
+.dropdown2 {
+    float: left;
+    overflow: hidden;
+ }
+
+ .dropdown2 .dropbtn2 {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font:inherit;
+    font-size: 25;
+ }
+
+ .dropdown2:hover .dropbtn2, .dropbtn2:focus {
+    background-color: #111;
+ }
+
+ .dropdown-content2 {
+    display: none;
+    position:fixed;
+    background-color: #f9f9f9;
+    width: 94px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+ }
+
+ .dropdown-content2 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+ }
+
+ .dropdown-content2 a:hover {
+    background-color: #ddd;
+ }
+
+ .showB {
+    display: block;
+ }
+
+.dropdown3 {
+     float: right;
+     overflow: hidden;
+  }
+
+ .dropdown3 .dropbtn3 {
+   cursor: pointer;
+   border: none;
+   outline: none;
+   color: white;
+   padding: 14px 16px;
+   background-color: inherit;
+   font:inherit;
+   font-size: 25;
+  }
+
+ .dropdown3:hover .dropbtn3, .dropbtn3:focus {
+   background-color: #111;
+ }
+
+ .dropdown3:hover .dropdown-content3 {
+    display: block;
+ }
+
+ .dropdown-content3 {
+   display: none;
+   position:fixed;
+   background-color: #f9f9f9;
+   min-width: 158px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+
+ .dropdown-content3 a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+
+ .dropdown-content3 a:hover {
+   background-color: #ddd;
+ }
+
+ .showC {
+   display: block;
+ }
+
+.select-dropdown {
+      margin-left: 75px;
+      margin-right: 100px;
+      overflow: hidden;
+   }
+
+/*Search Results */
+.search-container{
+  position: absolute;
+  top: 100px;
+  left: 168px;
+  width: 1200px;
+  text-align: justify;
+}
+
+.title-container{
+  position: absolute;
+  top: 40px;
+}
+
+.heading-container{
+  position: absolute;
+  top: 120px;
+  left: 168px;
+}
+
+.absolute {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    right: 100px;
+}
